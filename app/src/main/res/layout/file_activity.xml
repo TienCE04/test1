@@ -43,11 +43,11 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_tab"
         android:layout_width="match_parent"
-        app:cardCornerRadius="50dp"
         android:layout_height="42dp"
-        app:cardBackgroundColor="#F0F0F0"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#F0F0F0"
+        app:cardCornerRadius="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/icon_back">
@@ -60,11 +60,17 @@
 
 
     <androidx.viewpager2.widget.ViewPager2
-        android:orientation="horizontal"
         android:id="@+id/viewPager2"
-        app:tabMode="scrollable"
-        app:tabIndicatorAnimationMode="linear"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintTop_toBottomOf="@+id/cv_tab" />
+        android:layout_marginTop="110dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_tab"
+        app:layout_constraintVertical_bias="0.0"
+        app:tabIndicatorAnimationMode="linear"
+        app:tabMode="scrollable" />
 </androidx.constraintlayout.widget.ConstraintLayout>
